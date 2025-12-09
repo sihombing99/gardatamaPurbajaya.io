@@ -1,14 +1,22 @@
+// next.config.mjs
+
 /** @type {import('next').NextConfig} */
+console.log("CONFIG LOADED >>>>>>>>>");
+
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export',
+
   images: {
     unoptimized: true,
   },
-}
 
-export default nextConfig
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+};
+
+export default nextConfig;
